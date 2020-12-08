@@ -1,0 +1,27 @@
+# fly.toml file generated for 6pn-demo on 2020-12-08T13:26:57Z
+
+app = "6pn-demo"
+
+
+[experimental]
+  private_network = true
+
+[[services]]
+  internal_port = 8080
+  protocol = "tcp"
+
+  [services.concurrency]
+    hard_limit = 25
+    soft_limit = 20
+
+  [[services.ports]]
+    handlers = ["http"]
+    port = "80"
+
+  [[services.ports]]
+    handlers = ["tls", "http"]
+    port = "443"
+
+  [[services.tcp_checks]]
+    interval = 10000
+    timeout = 2000

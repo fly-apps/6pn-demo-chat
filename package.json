@@ -1,0 +1,13 @@
+{
+  "name": "flychatting-ws-example",
+  "version": "0.0.1",
+  "description": "A bare websockets chat example",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nats": "^1.4.12",
+    "ws": "^7.3.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
