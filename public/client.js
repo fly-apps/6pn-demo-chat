@@ -26,7 +26,7 @@ function connect() {
     scheme += 's';
   }
 
-  name=window.prompt("Enter a name for chat","rando");
+  name=window.prompt("Enter a name for chat","yourname");
   $('#n').val(name);
   $('#n').prop('disabled', true);
   $('#n').css('background', 'grey');
@@ -36,7 +36,7 @@ function connect() {
   
   socket = new WebSocket(serverUrl, 'json');
   socket.onopen = () => {
-    setInterval(ping,30000);
+    setInterval(ping,5000);
     sendNowon();
   }
 

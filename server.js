@@ -6,7 +6,8 @@ const app=express();
 app.use(express.json({ extended: false}));
 app.use(express.static('public'));
 
-const nc = NATS.connect("global.appkata-6pn-nats.internal");
+let natsapphost=process.env.NATSAPPHOST
+const nc = NATS.connect(natsapphost+".internal");
 
 var port = process.env.PORT || 3000;
 const server=new WebSocket.Server({ server:app.listen(port) });

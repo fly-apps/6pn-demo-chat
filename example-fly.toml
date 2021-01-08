@@ -1,6 +1,6 @@
-# fly.toml file generated for fly6pnchat on 2021-01-08T12:40:07Z
+# fly.toml file generated for 6pn-demo on 2020-12-08T13:26:57Z
 
-app = "fly6pnchat"
+app = "6pn-demo"
 
 
 [experimental]
