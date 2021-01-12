@@ -1,6 +1,6 @@
 # 6pn-demo-chat
 
-A chat server which uses Fly 6PN networking to connect to a NATS cluster enabling global chat.
+A chat server that uses Fly 6PN networking to connect to a NATS cluster enabling global chat.
 
 <!---- cut here --->
 
