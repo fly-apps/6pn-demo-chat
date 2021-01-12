@@ -12,7 +12,7 @@ Instead of immediately broadcasting the message to all users, the server sends t
 
 ## Preparation
 
-As this example relies on a NATS server (or cluster) to be available, it should be deployed alongside the `nats-cluster`, within the same Fly organization.
+As this example relies on a NATS server (or cluster) to be available, it should be deployed alongside the [`nats-cluster`](https://github.com/fly-examples/nats-cluster) example, within the same Fly organization.
 
 Make a note of the app-name used to deploy the NATS cluster.
 
