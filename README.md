@@ -69,7 +69,9 @@ Once the chat server has connected to the NATS cluster, it subscribes to a topic
 
 The NATS cluster can be scaled up and down according to demand. Chat servers will always be able to locate an available node thanks to Fly 6PN networking advertising homogenous services through DNS and `.internal` addresses. You can then deploy the NATS cluster and/or the chat server to any region and know that both will have predictable names; the NATS cluster through Fly's 6PN networking, and the chat server through Fly's AnyCast Edge network. 
 
+## Discuss
 
+You can discuss this example (and the nats-cluster example) on the [dedicated Fly Community topic](https://community.fly.io/t/new-examples-nats-cluster-and-6pn-demo-chat/562).
 
 
 
